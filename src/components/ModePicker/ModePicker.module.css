@@ -1,0 +1,111 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.segmentedRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: rgba(26, 11, 46, 0.4);
+  padding: 4px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+}
+
+.subRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.subGroup {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(26, 11, 46, 0.35);
+  padding: 3px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.label {
+  font-size: 0.76rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+  padding-left: 4px;
+}
+
+.segmentBtn {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ink-muted);
+  background: transparent;
+  transition: all 0.18s var(--ease-smooth);
+}
+
+.segmentBtn:hover {
+  color: var(--ink-strong);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.segmentBtn.active {
+  color: var(--ink-strong);
+  background: var(--glass-bg-active);
+  border: 1px solid var(--brand-400);
+  box-shadow: 0 2px 8px rgba(192, 132, 252, 0.2);
+  font-weight: 600;
+}
+
+.miniBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--ink-muted);
+  background: transparent;
+  transition: all 0.16s var(--ease-smooth);
+}
+
+.miniBtn:hover {
+  color: var(--ink-strong);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.miniBtn.active {
+  color: var(--ink-strong);
+  background: rgba(192, 132, 252, 0.25);
+  border: 1px solid var(--brand-300);
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .subRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .subGroup {
+    justify-content: space-between;
+  }
+}

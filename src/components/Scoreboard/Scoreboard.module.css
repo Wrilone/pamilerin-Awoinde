@@ -1,0 +1,68 @@
+.scoreRow {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.pill {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 8px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  transition: all 0.2s var(--ease-smooth);
+}
+
+.pill.activePill {
+  background: rgba(192, 132, 252, 0.14);
+  border-color: var(--brand-300);
+  box-shadow: 0 4px 16px rgba(192, 132, 252, 0.2);
+}
+
+.turnIndicator {
+  position: absolute;
+  top: -6px;
+  right: -4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--brand-400);
+  box-shadow: 0 0 10px var(--brand-300);
+}
+
+.pillLabel {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--ink-muted);
+  margin-bottom: 2px;
+}
+
+.labelX {
+  color: var(--mark-x);
+}
+
+.labelO {
+  color: var(--mark-o);
+}
+
+.pillCount {
+  font-size: 1.4rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--ink-strong);
+}
+
+.sessionEmpty {
+  font-size: 0.72rem;
+  text-align: center;
+  color: var(--ink-faint);
+  margin-top: -6px;
+  margin-bottom: 12px;
+}

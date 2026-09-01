@@ -1,0 +1,89 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 18px;
+  border-radius: var(--glass-radius);
+  margin-bottom: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.brandName {
+  font-size: clamp(1.3rem, 4vw, 1.85rem);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  color: var(--ink-strong);
+  text-shadow: 0 0 20px rgba(192, 132, 252, 0.4);
+}
+
+.brandDot {
+  color: var(--brand-400);
+}
+
+.brandBadge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: rgba(192, 132, 252, 0.15);
+  color: var(--brand-300);
+  border: 1px solid rgba(192, 132, 252, 0.3);
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.actionButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 13px;
+  min-height: 40px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: var(--ink-strong);
+  font-size: 0.86rem;
+  font-weight: 500;
+  transition: all 0.18s var(--ease-smooth);
+}
+
+.actionButton:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--brand-300);
+  transform: translateY(-1px);
+}
+
+.actionButton:active {
+  transform: translateY(0);
+}
+
+.muteButton[aria-pressed="true"] {
+  background: var(--color-danger-bg);
+  border-color: var(--color-danger-border);
+  color: var(--color-danger-text);
+}
+
+.themeButton[aria-pressed="true"] {
+  background: var(--glass-bg-active);
+  border-color: var(--brand-400);
+}
+
+.icon {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  vertical-align: middle;
+}

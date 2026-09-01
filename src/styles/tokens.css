@@ -1,0 +1,101 @@
+:root {
+  /* Font */
+  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  /* Purple brand ramp */
+  --brand-100: #F3E8FF;
+  --brand-300: #D8B4FE;
+  --brand-400: #C084FC;
+  --brand-500: #A855F7;  /* signature */
+  --brand-700: #7E22CE;
+  --brand-950: #2E1065;
+
+  /* Depth field behind glass (Dark / Default) */
+  --depth-base: #0D0517;
+  --depth-far:  #1A0B2E;
+  --depth-near: #4C1D95;
+
+  /* Typography / Ink */
+  --ink-strong: #F5F3FF;
+  --ink-muted:  rgba(237, 233, 254, 0.72);
+  --ink-faint:  rgba(237, 233, 254, 0.45);
+  --ink-inverse: #2E1065;
+
+  /* Marks */
+  --mark-x: #C084FC;
+  --mark-o: #FDE68A;
+
+  /* Focus ring */
+  --focus-ring: #D8B4FE;
+
+  /* Glassmorphism System (Dark / Default) */
+  --glass-bg:        rgba(192, 132, 252, 0.10);
+  --glass-bg-raised: rgba(192, 132, 252, 0.16);
+  --glass-bg-active: rgba(192, 132, 252, 0.24);
+  --glass-border:    rgba(245, 243, 255, 0.22);
+  --glass-border-highlight: rgba(245, 243, 255, 0.35);
+  --glass-fallback-bg: rgba(46, 16, 101, 0.82);
+  --glass-blur: 20px;
+  --glass-saturate: 160%;
+  --glass-radius: 24px;
+  --glass-radius-sm: 14px;
+  --glass-shadow:
+    0 16px 40px rgba(26, 11, 46, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.28);
+  --glass-shadow-raised:
+    0 20px 48px rgba(26, 11, 46, 0.48),
+    inset 0 1px 0 rgba(255, 255, 255, 0.36);
+
+  /* Status / Action tokens */
+  --color-danger: #EF4444;
+  --color-danger-bg: rgba(239, 68, 68, 0.18);
+  --color-danger-border: rgba(239, 68, 68, 0.45);
+  --color-danger-text: #FCA5A5;
+  --color-danger-btn: #FECACA;
+  --color-white: #FFFFFF;
+
+  /* Transitions */
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --ease-smooth: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Light Theme Overrides */
+[data-theme="light"] {
+  /* Depth field */
+  --depth-base: #F3E8FF;
+  --depth-far:  #EDE9FE;
+  --depth-near: #DDD6FE;
+
+  /* Typography / Ink */
+  --ink-strong: #1E1035;
+  --ink-muted:  rgba(30, 16, 53, 0.72);
+  --ink-faint:  rgba(30, 16, 53, 0.52);
+  --ink-inverse: #F5F3FF;
+
+  /* Marks */
+  --mark-x: #7E22CE;
+  --mark-o: #B45309;
+
+  /* Focus ring */
+  --focus-ring: #9333EA;
+
+  /* Glassmorphism System for Light Theme */
+  --glass-bg:        rgba(255, 255, 255, 0.60);
+  --glass-bg-raised: rgba(255, 255, 255, 0.80);
+  --glass-bg-active: rgba(168, 85, 247, 0.18);
+  --glass-border:    rgba(126, 34, 206, 0.16);
+  --glass-border-highlight: rgba(255, 255, 255, 0.90);
+  --glass-fallback-bg: rgba(237, 233, 254, 0.95);
+  --glass-shadow:
+    0 16px 40px rgba(76, 29, 149, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  --glass-shadow-raised:
+    0 20px 48px rgba(76, 29, 149, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+
+  /* Status / Action tokens */
+  --color-danger-bg: rgba(239, 68, 68, 0.12);
+  --color-danger-border: rgba(239, 68, 68, 0.35);
+  --color-danger-text: #DC2626;
+  --color-danger-btn: #B91C1C;
+}
